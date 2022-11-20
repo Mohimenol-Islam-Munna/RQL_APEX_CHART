@@ -1,0 +1,18 @@
+.toggle_button_container_total:hover .title {
+  transform: translateY(-22px);
+}
+
+.toggle_button_container_total:hover .expand {
+  transform: translateY(-22px);
+}
+
+.title,
+.expand {
+  transform: translateY(0px);
+  transition: all 0.5s;
+}
+
+.toggle_parent {
+  height: 28px;
+  overflow: hidden;
+}
