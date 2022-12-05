@@ -5,6 +5,7 @@ import ReactApextChart from "./components/ReactApextChart";
 import ReactApexChartFinal from "./components/ReactApexChartFinal";
 import UserStatistics from "./components/UserStatistics";
 import NTMCApiDashboardReport from "./components/NTMCApiDashboardReport";
+import PrintParentComponent from "./components/reactToPrint/PrintParentComponent";
 
 const activeUsers = {
   total: 6,
@@ -66,10 +67,12 @@ function App() {
     <>
       <div className="container">
         <h2 className="text-center">React Grid Layout</h2>
-        <UserStatistics activeUsers={activeUsers} />
+        <PrintParentComponent />
 
         {isFalse && (
           <>
+            <UserStatistics activeUsers={activeUsers} />
+
             <div className="border border-success">
               <h4>RGL Example</h4>
               <RGLBasic />
